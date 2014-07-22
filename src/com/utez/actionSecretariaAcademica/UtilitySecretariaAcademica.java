@@ -43,9 +43,12 @@ import utez.edu.secretariaAcademica.dao.FechasexamenbloqueJpaController;
 /**
  *
  * @author Sergio
- *///asesorplan
-//kardex
-public class UtilitySecretariaAcademica {
+ * 
+ * kardex
+ * asesorplan
+ * 
+ *///
+public final class UtilitySecretariaAcademica {
     private static AdeudoJpaController adeudoJpaController=new AdeudoJpaController(null,EntityManSecAcademica.getInstance());
     private static AdministrativoJpaController administrativoJpaController=new AdministrativoJpaController(null, EntityManSecAcademica.getInstance());
     private static AlumnoJpaController alumnoJpaController=new AlumnoJpaController(null, EntityManSecAcademica.getInstance());
