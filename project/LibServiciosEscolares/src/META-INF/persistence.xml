@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="ServiciosEscolaresPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.utez.servEscolares.entity.Examenprofesional</class>
+    <class>com.utez.servEscolares.entity.Programacionrecursada</class>
+    <class>com.utez.servEscolares.entity.Registrodocumentacionbach</class>
+    <class>com.utez.servEscolares.entity.Foliodiploma</class>
+    <class>com.utez.servEscolares.entity.Aspirantes</class>
+    <class>com.utez.servEscolares.entity.Materiasopcion</class>
+    <class>com.utez.servEscolares.entity.Programacionopcionc</class>
+    <class>com.utez.servEscolares.entity.Datossocioeconomicosbach</class>
+    <class>com.utez.servEscolares.entity.Solicitudmateriac</class>
+    <class>com.utez.servEscolares.entity.Cuadernoprogramacion</class>
+    <class>com.utez.servEscolares.entity.Materiales</class>
+    <class>com.utez.servEscolares.entity.Plandeestudios</class>
+    <class>com.utez.servEscolares.entity.Fechasexam</class>
+    <class>com.utez.servEscolares.entity.Documentostitulacion</class>
+    <class>com.utez.servEscolares.entity.Imagenes</class>
+    <class>com.utez.servEscolares.entity.Grupoinduccion</class>
+    <class>com.utez.servEscolares.entity.Opcionesestudio</class>
+    <class>com.utez.servEscolares.entity.Registrosep</class>
+    <class>com.utez.servEscolares.entity.Opcionestitulacion</class>
+    <class>com.utez.servEscolares.entity.Registrodocumentacionlic</class>
+    <class>com.utez.servEscolares.entity.Registroeventos</class>
+    <class>com.utez.servEscolares.entity.Datosocupacionalesbach</class>
+    <class>com.utez.servEscolares.entity.Tramitetitulacion</class>
+    <class>com.utez.servEscolares.entity.Kardex</class>
+    <class>com.utez.servEscolares.entity.Clavescarreras</class>
+    <class>com.utez.servEscolares.entity.Asesores</class>
+    <class>com.utez.servEscolares.entity.Asesoriascalendario</class>
+    <class>com.utez.servEscolares.entity.Complementoalumno</class>
+    <class>com.utez.servEscolares.entity.Controldocumentos</class>
+    <class>com.utez.servEscolares.entity.Seguimiento</class>
+    <class>com.utez.servEscolares.entity.Calendarioescolar</class>
+    <class>com.utez.servEscolares.entity.Cuerpoacta</class>
+    <class>com.utez.servEscolares.entity.Datosescbach</class>
+    <class>com.utez.servEscolares.entity.Constantes</class>
+    <class>com.utez.servEscolares.entity.Encuestabajas</class>
+    <class>com.utez.servEscolares.entity.Registroparticipante</class>
+    <class>com.utez.servEscolares.entity.Calificacionesmodulos</class>
+    <class>com.utez.servEscolares.entity.Datosescolareslic</class>
+    <class>com.utez.servEscolares.entity.Controlmatricula</class>
+    <class>com.utez.servEscolares.entity.Grupos</class>
+    <class>com.utez.servEscolares.entity.Requisitostramitetitulacion</class>
+    <class>com.utez.servEscolares.entity.Salidamaterial</class>
+    <class>com.utez.servEscolares.entity.Bitacora</class>
+    <class>com.utez.servEscolares.entity.Cursosasesores</class>
+    <class>com.utez.servEscolares.entity.Llenagrupoind</class>
+    <class>com.utez.servEscolares.entity.Califkardex</class>
+    <class>com.utez.servEscolares.entity.Registrodeactas</class>
+    <class>com.utez.servEscolares.entity.Registrodocumentacionmaestria</class>
+    <class>com.utez.servEscolares.entity.Materiasdeplan</class>
+    <class>com.utez.servEscolares.entity.Datosocupacionaleslic</class>
+    <class>com.utez.servEscolares.entity.Programaseasesores</class>
+    <class>com.utez.servEscolares.entity.Serviciosocial</class>
+    <class>com.utez.servEscolares.entity.Entradamaterial</class>
+    <class>com.utez.servEscolares.entity.Tablaencabezado</class>
+    <class>com.utez.servEscolares.entity.Folio</class>
+    <class>com.utez.servEscolares.entity.Datosgeneraleslic</class>
+    <class>com.utez.servEscolares.entity.Asignaciondocumentostitulacion</class>
+    <class>com.utez.servEscolares.entity.Procesotitulacion</class>
+    <class>com.utez.servEscolares.entity.Estadoexamen</class>
+    <class>com.utez.servEscolares.entity.Acusealumnoexamen</class>
+    <class>com.utez.servEscolares.entity.Solicitudautorizacion</class>
+    <class>com.utez.servEscolares.entity.Datosgralesmaestria</class>
+    <class>com.utez.servEscolares.entity.Alumnos</class>
+    <class>com.utez.servEscolares.entity.Moduloseventos</class>
+    <class>com.utez.servEscolares.entity.Usuarios</class>
+    <class>com.utez.servEscolares.entity.Reporteservicio</class>
+    <properties>
+      <property name="hibernate.connection.username" value="root"/>
+      <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <property name="hibernate.connection.password" value="root"/>
+      <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/sige?zeroDateTimeBehavior=convertToNull"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+    </properties>
+  </persistence-unit>
+</persistence>

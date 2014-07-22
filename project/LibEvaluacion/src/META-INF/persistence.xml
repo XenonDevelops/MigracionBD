@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="EvaluacionPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.utez.evaluacion.entity.Asesoriascalendario</class>
+    <class>com.utez.evaluacion.entity.Grupo</class>
+    <class>com.utez.evaluacion.entity.Aplicador</class>
+    <class>com.utez.evaluacion.entity.Resultadoautoeval</class>
+    <class>com.utez.evaluacion.entity.Reactivo</class>
+    <class>com.utez.evaluacion.entity.Bitacora</class>
+    <class>com.utez.evaluacion.entity.Actividadintegradora</class>
+    <class>com.utez.evaluacion.entity.Entregaexamen</class>
+    <class>com.utez.evaluacion.entity.Programacionexamen</class>
+    <class>com.utez.evaluacion.entity.Nominaaplicador</class>
+    <class>com.utez.evaluacion.entity.Plantel</class>
+    <class>com.utez.evaluacion.entity.Nominaconcepto</class>
+    <class>com.utez.evaluacion.entity.Respuestasreactivocol</class>
+    <class>com.utez.evaluacion.entity.Asignacionactividad</class>
+    <class>com.utez.evaluacion.entity.Tipoexamen</class>
+    <class>com.utez.evaluacion.entity.Asignacionplan</class>
+    <class>com.utez.evaluacion.entity.Resultadodirecciones</class>
+    <class>com.utez.evaluacion.entity.Resultadomaterial</class>
+    <class>com.utez.evaluacion.entity.Programacionautoeval</class>
+    <class>com.utez.evaluacion.entity.Fechasexam</class>
+    <class>com.utez.evaluacion.entity.Examen</class>
+    <class>com.utez.evaluacion.entity.Resultadoencuesta</class>
+    <class>com.utez.evaluacion.entity.Imagenreactivo</class>
+    <class>com.utez.evaluacion.entity.Respuestasreactivo</class>
+    <class>com.utez.evaluacion.entity.Correspondencia</class>
+    <class>com.utez.evaluacion.entity.Plandeestudios</class>
+    <class>com.utez.evaluacion.entity.Resultadoasesor</class>
+    <class>com.utez.evaluacion.entity.Asignacionalumno</class>
+    <class>com.utez.evaluacion.entity.Banco</class>
+    <class>com.utez.evaluacion.entity.Aplicacionexamen</class>
+    <class>com.utez.evaluacion.entity.Asesor</class>
+    <class>com.utez.evaluacion.entity.Usuarios</class>
+    <class>com.utez.evaluacion.entity.Asignaaplicador</class>
+    <class>com.utez.evaluacion.entity.Calendarioescolar</class>
+    <class>com.utez.evaluacion.entity.Materiasdeplan</class>
+    <class>com.utez.evaluacion.entity.Movimientos</class>
+    <class>com.utez.evaluacion.entity.Examenextemporaneo</class>
+    <class>com.utez.evaluacion.entity.Respuestasresultado</class>
+    <class>com.utez.evaluacion.entity.Constantes</class>
+    <class>com.utez.evaluacion.entity.Archivomuerto</class>
+    <properties>
+      <property name="hibernate.connection.username" value="root"/>
+      <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <property name="hibernate.connection.password" value="root"/>
+      <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/evalua?zeroDateTimeBehavior=convertToNull"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+    </properties>
+  </persistence-unit>
+</persistence>

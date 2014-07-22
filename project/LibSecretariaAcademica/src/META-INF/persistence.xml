@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="SecretariaAcademicaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.utez.secAcademica.entity.Bloqueasignatura</class>
+    <class>com.utez.secAcademica.entity.Historicogrupo</class>
+    <class>com.utez.secAcademica.entity.Fechasexamenopcionc</class>
+    <class>com.utez.secAcademica.entity.Grupo</class>
+    <class>com.utez.secAcademica.entity.Solicitudprogramacion</class>
+    <class>com.utez.secAcademica.entity.Movimientocie</class>
+    <class>com.utez.secAcademica.entity.Tipopagos</class>
+    <class>com.utez.secAcademica.entity.Cuadernoprogramacion</class>
+    <class>com.utez.secAcademica.entity.Historicoopcionc</class>
+    <class>com.utez.secAcademica.entity.Cicloescolar</class>
+    <class>com.utez.secAcademica.entity.Vacaciones</class>
+    <class>com.utez.secAcademica.entity.Plantel</class>
+    <class>com.utez.secAcademica.entity.Fechasexamen</class>
+    <class>com.utez.secAcademica.entity.Recursohumano</class>
+    <class>com.utez.secAcademica.entity.Mesopcionc</class>
+    <class>com.utez.secAcademica.entity.Administrativo</class>
+    <class>com.utez.secAcademica.entity.Calendariorectoria</class>
+    <class>com.utez.secAcademica.entity.Fechasexamenbloque</class>
+    <class>com.utez.secAcademica.entity.Opcionestudio</class>
+    <class>com.utez.secAcademica.entity.Programacionopcionc</class>
+    <class>com.utez.secAcademica.entity.Periodo</class>
+    <class>com.utez.secAcademica.entity.Alumno</class>
+    <class>com.utez.secAcademica.entity.Programacionra</class>
+    <class>com.utez.secAcademica.entity.Fechaasesoria</class>
+    <class>com.utez.secAcademica.entity.Asignatura</class>
+    <class>com.utez.secAcademica.entity.Fechaasesoriabloquelinea</class>
+    <class>com.utez.secAcademica.entity.Adeudo</class>
+    <class>com.utez.secAcademica.entity.Programacioncancelada</class>
+    <class>com.utez.secAcademica.entity.Suspensionlabores</class>
+    <class>com.utez.secAcademica.entity.Asesoriaasignatura</class>
+    <class>com.utez.secAcademica.entity.Asesor</class>
+    <class>com.utez.secAcademica.entity.Planestudios</class>
+    <class>com.utez.secAcademica.entity.Calendario</class>
+    <properties>
+      <property name="hibernate.connection.username" value="postgres"/>
+      <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+      <property name="hibernate.connection.password" value="root"/>
+      <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/dbSecretariaAcademica"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+    </properties>
+  </persistence-unit>
+</persistence>
