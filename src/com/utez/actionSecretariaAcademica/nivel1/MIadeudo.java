@@ -4,7 +4,7 @@
  */
 package com.utez.actionSecretariaAcademica.nivel1;
 
-import com.utez.actionSecretariaAcademica.MISecretariaAcademica;
+import com.utez.migracionBD.utility.MI;
 import java.util.ArrayList;
 
 /**
@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Sergio
  * 
  */
-public class MIadeudo extends MISecretariaAcademica {
+public class MIadeudo extends MI {
 
     public ArrayList migrate() {
         

@@ -18,6 +18,7 @@ import com.utez.secAcademica.dao.CuadernoprogramacionJpaController;
 import com.utez.secAcademica.dao.FechaasesoriaJpaController;
 import com.utez.secAcademica.dao.FechaasesoriabloquelineaJpaController;
 import com.utez.secAcademica.dao.FechasexamenJpaController;
+import com.utez.secAcademica.dao.FechasexamenbloqueJpaController;
 import com.utez.secAcademica.dao.FechasexamenopcioncJpaController;
 import com.utez.secAcademica.dao.GrupoJpaController;
 import com.utez.secAcademica.dao.HistoricogrupoJpaController;
@@ -37,7 +38,6 @@ import com.utez.secAcademica.dao.SuspensionlaboresJpaController;
 import com.utez.secAcademica.dao.TipopagosJpaController;
 import com.utez.secAcademica.dao.VacacionesJpaController;
 import com.utez.secAcademica.entityMan.EntityManSecAcademica;
-import utez.edu.secretariaAcademica.dao.FechasexamenbloqueJpaController;
 
 
 /**

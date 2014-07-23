@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.utez.actionSecretariaAcademica;
+package com.utez.migracionBD.utility;
 
 import java.util.ArrayList;
 
@@ -10,14 +10,14 @@ import java.util.ArrayList;
  *
  * @author Sergio
  */
-public class MIServiciosEscolares {
+public class MI {
 
     public ArrayList result;
     private ArrayList resultadoRegistro;
     private int count;
     private boolean success;
 
-    public MIServiciosEscolares() {
+    public MI() {
         success = false;
         count = 0;
         result = new ArrayList();
