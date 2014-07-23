@@ -10,14 +10,14 @@ import java.util.ArrayList;
  *
  * @author Sergio
  */
-public class MI {
+public class MIInheritance {
 
     public ArrayList result;
     private ArrayList resultadoRegistro;
     private int count;
     private boolean success;
 
-    public MI() {
+    public MIInheritance() {
         success = false;
         count = 0;
         result = new ArrayList();
