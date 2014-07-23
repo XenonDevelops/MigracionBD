@@ -13,8 +13,6 @@ import java.util.ArrayList;
  */
 public class MIadeudo extends MISecretariaAcademica {
 
-
-
     public ArrayList migrate() {
         
         return result;

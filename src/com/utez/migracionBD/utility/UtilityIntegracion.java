@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.utez.actionSecretariaAcademica;
+package com.utez.migracionBD.utility;
 
 import com.utez.integracion.dao.ModuloJpaController;
 import com.utez.integracion.dao.TipoSexoJpaController;

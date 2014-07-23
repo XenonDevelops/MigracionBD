@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.utez.migracionBD.utilerias;
+package com.utez.migracionBD.utility;
 
 import com.utez.evaluacion.dao.AsesorJpaController;
 import com.utez.evaluacion.dao.ExamenJpaController;
