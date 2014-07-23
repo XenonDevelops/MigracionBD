@@ -9,8 +9,8 @@ import java.util.ArrayList;
 
 /**
  * 
- *
  * @author Sergio
+ * 
  */
 public class MIadeudo extends MISecretariaAcademica {
 
