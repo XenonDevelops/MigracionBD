@@ -28,18 +28,19 @@ import org.apache.http.util.EntityUtils;
  */
 public class SendRequestHttpUtils {
 
-    public void doPost() throws IOException {
+    public String doPost(String[] persona) throws IOException {
+
         CloseableHttpClient httpclient = HttpClients.createDefault();
         HttpPost httpPost = new HttpPost("http://losimpuestos.com.mx/rfc/calcular-rfc.php");
         List<NameValuePair> params = new ArrayList<NameValuePair>();
-        params.add(new BasicNameValuePair("paterno", "Bastida"));
-        params.add(new BasicNameValuePair("materno", "Garcia"));
-        params.add(new BasicNameValuePair("nombre", "Hector"));
-        params.add(new BasicNameValuePair("dia", "11"));
-        params.add(new BasicNameValuePair("sexo", "H"));
-        params.add(new BasicNameValuePair("entidad", "MS"));
-        params.add(new BasicNameValuePair("mes", "11"));
-        params.add(new BasicNameValuePair("anno", "1992"));
+        params.add(new BasicNameValuePair("paterno", persona[0]));
+        params.add(new BasicNameValuePair("materno", persona[1]));
+        params.add(new BasicNameValuePair("nombre", persona[2]));
+        params.add(new BasicNameValuePair("dia", persona[3]));
+        params.add(new BasicNameValuePair("sexo", persona[4]));
+        params.add(new BasicNameValuePair("entidad", persona[5]));
+        params.add(new BasicNameValuePair("mes", persona[6]));
+        params.add(new BasicNameValuePair("anno", persona[7]));
         httpPost.setEntity(new UrlEncodedFormEntity(params));
         HttpResponse response = httpclient.execute(httpPost);
         String HTML = EntityUtils.toString(response.getEntity());
@@ -57,9 +58,14 @@ public class SendRequestHttpUtils {
                 curp += cut.charAt(i);
             }
         }
-        int terminaCurp=18+curp.length()+26;
-        String dig = array[1].substring(terminaCurp,62);
-        System.out.print(curp+"-"+dig);
+        int terminaCurp = 18 + curp.length() + 26;
+        String dig = array[1].substring(terminaCurp, 62);
+//    System.out.println(persona[0]+"-"+persona[1]+"-" +persona[2]);
+    System.out.println(persona[0]+"-"+persona[1]+"-" +persona[2]+"-" +persona[3]+"-" +persona[4]);
+    System.out.println("entidad"+persona[5]+"-"+persona[6]+"-" +persona[7]);
+        System.out.println(curp+dig);
+        
+        return curp + dig;
     }
 
 }
